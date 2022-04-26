@@ -48,4 +48,7 @@ export default {
     width: 100%;
   }
 }
+i {
+  color: $color-silver;
+}
 </style>
