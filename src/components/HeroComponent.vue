@@ -17,10 +17,10 @@
         </div>
 
         <!--Testo centrale-->
-        <div class="col-4 hero-txt p-5">
-          <h3>Hello, I'm Matin</h3>
+        <div class="col-4 hero-txt">
+          <h3 class="signature">Hello, I'm Matin</h3>
           <h2>Artist Coaching And Mentoring Might Be for You</h2>
-          <button>Get started today</button>
+          <button class="mt-5">Get started today</button>
         </div>
 
         <!--Immagini dx-->
@@ -66,8 +66,30 @@ export default {
     left: 110rem;
     width: 25rem;
   }
-  h3 {
+  .hero-txt {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .signature {
     color: $ice-cold;
+    font-family: "Allura", sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  h2 {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+  }
+  button {
+    padding: 15px;
+    border: none;
+    background-color: #ef6f31;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    width: 15rem;
   }
 }
 </style>
