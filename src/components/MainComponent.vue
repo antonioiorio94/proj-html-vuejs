@@ -19,7 +19,7 @@
           <p class="mt-3">{{ item.description }}</p>
         </div>
         <!--Info-->
-        <div class="row mt-5">
+        <div class="row mt-5 mb-5">
           <div class="col- 12 col-sm-6">
             <img
               class="offset-6"
@@ -47,6 +47,22 @@
               waht it takes to create
             </p>
             <button class="mt-5">Get started today</button>
+          </div>
+        </div>
+
+        <!--Video-->
+        <div class="row mt-5">
+          <div class="col-12 d-flex justify-content-center">
+            <img
+              class="video_frame"
+              src="@/assets/artist-video-poster.jpg"
+              alt="artist video"
+            />
+            <img
+              class="youtube_icon"
+              src="@/assets/icon-youtube-play.png"
+              alt="youtube icon"
+            />
           </div>
         </div>
       </div>
@@ -124,5 +140,15 @@ button {
 }
 p {
   line-height: 30px;
+}
+.video_frame {
+  position: relative;
+}
+.youtube_icon {
+  width: 6%;
+  position: absolute;
+  height: 6%;
+  z-index: 1;
+  top: 171rem;
 }
 </style>
