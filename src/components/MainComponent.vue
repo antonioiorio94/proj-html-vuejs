@@ -8,7 +8,7 @@
           <h2>I understand what it takes to create. I can help you with</h2>
         </div>
       </div>
-      <!--Immagini-->
+      <!--Opzioni-->
       <div class="row mt-5">
         <div class="col-3" v-for="item in siteOption" :key="item">
           <img
@@ -17,6 +17,37 @@
           />
           <h4 class="mt-5">{{ item.title }}</h4>
           <p class="mt-3">{{ item.description }}</p>
+        </div>
+        <!--Info-->
+        <div class="row mt-5">
+          <div class="col- 12 col-sm-6">
+            <img
+              class="offset-6"
+              src="@/assets/artist-quote-icon.png"
+              alt="quote icon"
+            />
+            <h2 class="mt-5 quote">
+              I coach and mentor visual artist, like you, to Create Like You
+              Mean It
+            </h2>
+            <h3 class="signature mt-5 text-center">Martin Garrix</h3>
+          </div>
+
+          <div class="col- 12 col-sm-6 p-5">
+            <p class="mt-5">
+              As a coach and mentor, my ultimate goal is to motivate visual
+              artists toward inspired action. I help to get you back on track to
+              being the productiove,creative, meaningful and authentic artist
+              you truly want to be. I support artists in craftiong and living a
+              creative life as well as feeling good about themselves and thei
+              art.
+            </p>
+            <p class="mt-5">
+              As an artist and an educator for nearly 30 years, I understand
+              waht it takes to create
+            </p>
+            <button class="mt-5">Get started today</button>
+          </div>
         </div>
       </div>
     </div>
@@ -78,5 +109,20 @@ h2 {
 }
 h4 {
   font-weight: bold;
+}
+.quote {
+  font-size: 5rem;
+}
+button {
+  padding: 15px;
+  border: none;
+  background-color: #edd3c7;
+  color: #ef6f31;
+  font-weight: bold;
+  border-radius: 10px;
+  width: 15rem;
+}
+p {
+  line-height: 30px;
 }
 </style>
