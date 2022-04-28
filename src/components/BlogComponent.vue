@@ -14,8 +14,10 @@
             <p>{{ post.section }}</p>
             <h4>{{ post.title }}</h4>
             <div class="info-date d-flex justify-content-between">
-              <p><i class="fa-solid fa-calendar-days"></i>{{ post.date }}</p>
-              <p><i class="fa-solid fa-eye"></i>{{ post.views }}</p>
+              <p>
+                <i class="fa-solid fa-calendar-days mx-2"></i>{{ post.date }}
+              </p>
+              <p><i class="fa-solid fa-eye mx-2"></i>{{ post.views }}</p>
             </div>
           </div>
         </div>
@@ -48,7 +50,7 @@ export default {
         {
           id: 2,
           section: "ARTIST",
-          title: "Pocket-sized NOtebooks Hold Miniature Paintings",
+          title: "Pocket-sized Notebooks Hold Miniature Paintings",
           date: "May 12,2020",
           views: 603,
           img: "artist-blog-01-480x356.jpg",
@@ -71,7 +73,10 @@ export default {
 @import "@/style/general";
 @import "@/style/component-style";
 .container-fluid {
-  background-color: rgb(238, 238, 238);
+  background-color: rgba(238, 238, 238, 0.181);
+  background-image: url("@/assets/maxcoach-shape-14-1536x343.png");
+  background-repeat: no-repeat;
+  background-size: contain;
   .card {
     padding: 0px;
     width: 23%;

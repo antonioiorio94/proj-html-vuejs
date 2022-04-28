@@ -139,5 +139,6 @@ export default {
 }
 .course-info:hover {
   border: 2px solid $main-orange;
+  cursor: pointer;
 }
 </style>

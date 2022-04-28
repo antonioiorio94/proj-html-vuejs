@@ -13,6 +13,7 @@
       <CarouselComponent />
       <CourseSectionComponent />
       <BlogComponent />
+      <EventsComponent />
     </main>
   </div>
 </template>
@@ -24,6 +25,7 @@ import MainComponent from "./components/MainComponent.vue";
 import CarouselComponent from "./components/CarouselComponent.vue";
 import CourseSectionComponent from "./components/CourseSectionComponent.vue";
 import BlogComponent from "./components/BlogComponent.vue";
+import EventsComponent from "./components/EventsComponent.vue";
 
 export default {
   name: "App",
@@ -34,6 +36,7 @@ export default {
     CarouselComponent,
     CourseSectionComponent,
     BlogComponent,
+    EventsComponent,
   },
 };
 </script>
