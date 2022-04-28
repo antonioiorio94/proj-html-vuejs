@@ -15,6 +15,10 @@
       <BlogComponent />
       <EventsComponent />
     </main>
+
+    <footer>
+      <FooterComponent />
+    </footer>
   </div>
 </template>
 
@@ -26,6 +30,7 @@ import CarouselComponent from "./components/CarouselComponent.vue";
 import CourseSectionComponent from "./components/CourseSectionComponent.vue";
 import BlogComponent from "./components/BlogComponent.vue";
 import EventsComponent from "./components/EventsComponent.vue";
+import FooterComponent from "./components/FooterComponent.vue";
 
 export default {
   name: "App",
@@ -37,6 +42,7 @@ export default {
     CourseSectionComponent,
     BlogComponent,
     EventsComponent,
+    FooterComponent,
   },
 };
 </script>
