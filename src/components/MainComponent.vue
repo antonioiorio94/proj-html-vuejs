@@ -135,6 +135,6 @@ p {
   position: absolute;
   height: 6%;
   z-index: 1;
-  top: 171rem;
+  top: 168rem;
 }
 </style>

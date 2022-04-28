@@ -25,6 +25,15 @@
         </div>
       </div>
     </div>
+
+    <!--Newsletter section-->
+
+    <div class="row mt-5 newsletter-section justify-content-center">
+      <div class="col-3"><h3>Newsletter to get in touch</h3></div>
+      <div class="col-6 text-center">
+        <input class="email-input" type="text" placeholder="Your e-mail" />
+      </div>
+    </div>
   </div>
 </template>
 
@@ -76,8 +85,28 @@ export default {
   background-image: url("@/assets/maxcoach-shape-13.png");
   background-repeat: no-repeat;
   background-position-x: right;
-}
-h4 {
-  font-weight: bold;
+  h4 {
+    font-weight: bold;
+  }
+  .newsletter-section {
+    background-color: rgba(10, 10, 185, 0.545);
+    background-image: url("@/assets/artist-shape-color-paint-top-left.png");
+    background-repeat: no-repeat;
+    padding: 50px;
+    h3 {
+      color: #fff;
+    }
+    .email-input {
+      background-color: transparent;
+      border-style: none;
+    }
+    input {
+      width: 30rem;
+    }
+  }
+  input::placeholder {
+    color: #fff;
+    opacity: 1;
+  }
 }
 </style>
