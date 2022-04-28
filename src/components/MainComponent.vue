@@ -107,22 +107,8 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/style/general";
-.main-txt {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
-.signature {
-  color: $ice-cold;
-  font-family: "Allura", sans-serif;
-  font-size: 3rem;
-  font-weight: bold;
-}
-h2 {
-  font-size: 2rem;
-  text-align: center;
-  font-weight: bold;
-}
+@import "@/style/component-style";
+
 h4 {
   font-weight: bold;
 }

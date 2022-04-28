@@ -1,0 +1,21 @@
+@import "@/style/general";
+
+// signature style
+.signature {
+  color: $ice-cold;
+  font-family: "Allura", sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+}
+h2 {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.main-txt {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}

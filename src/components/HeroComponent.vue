@@ -17,7 +17,7 @@
         </div>
 
         <!--Testo centrale-->
-        <div class="col-4 hero-txt">
+        <div class="col-4 main-txt">
           <h3 class="signature">Hello, I'm Matin</h3>
           <h2>Artist Coaching And Mentoring Might Be for You</h2>
           <button class="mt-5">Get started today</button>
@@ -44,6 +44,7 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/style/general";
+@import "@/style/component-style";
 .hero {
   background-image: url("@/assets/hero-img.jpg");
   height: 62rem;
@@ -66,22 +67,7 @@ export default {
     left: 110rem;
     width: 25rem;
   }
-  .hero-txt {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-  }
-  .signature {
-    color: $ice-cold;
-    font-family: "Allura", sans-serif;
-    font-size: 3rem;
-    font-weight: bold;
-  }
-  h2 {
-    font-size: 3rem;
-    text-align: center;
-    font-weight: bold;
-  }
+
   button {
     padding: 15px;
     border: none;

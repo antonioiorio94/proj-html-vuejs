@@ -1,5 +1,12 @@
 <template>
   <div class="container mt-5">
+    <div class="row align-items-center justify-content-center mt-5">
+      <!--Testo-->
+      <div class="col-6 main-txt mb-5">
+        <h3 class="signature">Testimonials</h3>
+        <h2>Why do people love me?</h2>
+      </div>
+    </div>
     <vueper-slides
       class="no-shadow"
       :visible-slides="3"
@@ -102,9 +109,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "@/style/component-style";
 #card {
   padding: 20px;
-  box-shadow: 20px 20px 20px;
 }
 .name {
   font-weight: bold;
