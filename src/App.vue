@@ -12,6 +12,7 @@
       <MainComponent />
       <CarouselComponent />
       <CourseSectionComponent />
+      <BlogComponent />
     </main>
   </div>
 </template>
@@ -22,6 +23,7 @@ import HeroComponent from "./components/HeroComponent.vue";
 import MainComponent from "./components/MainComponent.vue";
 import CarouselComponent from "./components/CarouselComponent.vue";
 import CourseSectionComponent from "./components/CourseSectionComponent.vue";
+import BlogComponent from "./components/BlogComponent.vue";
 
 export default {
   name: "App",
@@ -31,10 +33,12 @@ export default {
     MainComponent,
     CarouselComponent,
     CourseSectionComponent,
+    BlogComponent,
   },
 };
 </script>
 
 <style lang="scss">
 @import "@/style/general";
+@import "@/style/component-style";
 </style>

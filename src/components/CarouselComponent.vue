@@ -16,13 +16,7 @@
       :dragging-distance="200"
       :breakpoints="{ 800: { visibleSlides: 2, slideMultiple: 2 } }"
     >
-      <vueper-slide
-        id="card"
-        v-for="(slide, i) in review"
-        :key="i"
-        :title="slide.title"
-        :content="slide.content"
-      >
+      <vueper-slide id="card" v-for="(slide, i) in review" :key="i">
         <template #content>
           <h4>{{ slide.title }}</h4>
           <p>{{ slide.content }}</p>
@@ -52,58 +46,60 @@ import "vueperslides/dist/vueperslides.css";
 
 export default {
   name: "CarouselComponent",
-  data: () => ({
-    review: [
-      {
-        title: "High level of efficency and scientific teaching methods",
-        content:
-          "I am free to learn at my own peace, follow my own schedule and choose the subject i want to learn from the syllabus. Great study portal for people like me",
-        name: "Mia Hollace",
-        profession: "/Freelancer",
-        photo: "artist-testimonial-avatar-01.jpg",
-      },
-      {
-        title: "High level of efficency and scientific teaching methods",
-        content:
-          "I am free to learn at my own peace, follow my own schedule and choose the subject i want to learn from the syllabus. Great study portal for people like me",
-        name: "Mia Hollace",
-        profession: "/Freelancer",
-        photo: "artist-testimonial-avatar-02.jpg",
-      },
-      {
-        title: "High level of efficency and scientific teaching methods",
-        content:
-          "I am free to learn at my own peace, follow my own schedule and choose the subject i want to learn from the syllabus. Great study portal for people like me",
-        name: "Mia Hollace",
-        profession: "/Freelancer",
-        photo: "artist-testimonial-avatar-03.jpg",
-      },
-      {
-        title: "High level of efficency and scientific teaching methods",
-        content:
-          "I am free to learn at my own peace, follow my own schedule and choose the subject i want to learn from the syllabus. Great study portal for people like me",
-        name: "Mia Hollace",
-        profession: "/Freelancer",
-        photo: "artist-testimonial-avatar-04.jpg",
-      },
-      {
-        title: "High level of efficency and scientific teaching methods",
-        content:
-          "I am free to learn at my own peace, follow my own schedule and choose the subject i want to learn from the syllabus. Great study portal for people like me",
-        name: "Mia Hollace",
-        profession: "/Freelancer",
-        photo: "artist-testimonial-avatar-03.jpg",
-      },
-      {
-        title: "High level of efficency and scientific teaching methods",
-        content:
-          "I am free to learn at my own peace, follow my own schedule and choose the subject i want to learn from the syllabus. Great study portal for people like me",
-        name: "Mia Hollace",
-        profession: "/Freelancer",
-        photo: "artist-testimonial-avatar-02.jpg",
-      },
-    ],
-  }),
+  data() {
+    return {
+      review: [
+        {
+          title: "High level of efficency and scientific teaching methods",
+          content:
+            "I am free to learn at my own peace, follow my own schedule and choose the subject i want to learn from the syllabus. Great study portal for people like me",
+          name: "Mia Hollace",
+          profession: "/Freelancer",
+          photo: "artist-testimonial-avatar-01.jpg",
+        },
+        {
+          title: "High level of efficency and scientific teaching methods",
+          content:
+            "I am free to learn at my own peace, follow my own schedule and choose the subject i want to learn from the syllabus. Great study portal for people like me",
+          name: "Mia Hollace",
+          profession: "/Freelancer",
+          photo: "artist-testimonial-avatar-02.jpg",
+        },
+        {
+          title: "High level of efficency and scientific teaching methods",
+          content:
+            "I am free to learn at my own peace, follow my own schedule and choose the subject i want to learn from the syllabus. Great study portal for people like me",
+          name: "Mia Hollace",
+          profession: "/Freelancer",
+          photo: "artist-testimonial-avatar-03.jpg",
+        },
+        {
+          title: "High level of efficency and scientific teaching methods",
+          content:
+            "I am free to learn at my own peace, follow my own schedule and choose the subject i want to learn from the syllabus. Great study portal for people like me",
+          name: "Mia Hollace",
+          profession: "/Freelancer",
+          photo: "artist-testimonial-avatar-04.jpg",
+        },
+        {
+          title: "High level of efficency and scientific teaching methods",
+          content:
+            "I am free to learn at my own peace, follow my own schedule and choose the subject i want to learn from the syllabus. Great study portal for people like me",
+          name: "Mia Hollace",
+          profession: "/Freelancer",
+          photo: "artist-testimonial-avatar-03.jpg",
+        },
+        {
+          title: "High level of efficency and scientific teaching methods",
+          content:
+            "I am free to learn at my own peace, follow my own schedule and choose the subject i want to learn from the syllabus. Great study portal for people like me",
+          name: "Mia Hollace",
+          profession: "/Freelancer",
+          photo: "artist-testimonial-avatar-02.jpg",
+        },
+      ],
+    };
+  },
   components: { VueperSlides, VueperSlide },
 };
 </script>
