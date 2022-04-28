@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <header>
+      <CountdownComponent />
       <HeaderComponent />
     </header>
 
@@ -31,10 +32,12 @@ import CourseSectionComponent from "./components/CourseSectionComponent.vue";
 import BlogComponent from "./components/BlogComponent.vue";
 import EventsComponent from "./components/EventsComponent.vue";
 import FooterComponent from "./components/FooterComponent.vue";
+import CountdownComponent from "./components/CountdownComponent.vue";
 
 export default {
   name: "App",
   components: {
+    CountdownComponent,
     HeaderComponent,
     HeroComponent,
     MainComponent,
