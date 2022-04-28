@@ -1,7 +1,7 @@
 <template>
   <div class="container-fluid">
     <div class="container">
-      <div class="row">
+      <div class="row p-1">
         <div class="col-5">
           <p>Starts TOMORROW! Our biggest event of the year...</p>
         </div>
@@ -18,6 +18,7 @@
         <div class="col-1 p-0 text-center">
           <p>{{ displaySeconds }}</p>
         </div>
+        <div class="col-2"><button class="">Get started today</button></div>
       </div>
     </div>
   </div>
@@ -75,7 +76,21 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "@/style/general";
+@import "@/style/component-style";
 .container-fluid {
   background-color: rgb(233, 233, 233);
+
+  button {
+    padding: 5px;
+    border: none;
+    background-color: $main-orange;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 10px;
+  }
+  p {
+    font-weight: bold;
+  }
 }
 </style>
