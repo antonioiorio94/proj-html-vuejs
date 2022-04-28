@@ -10,7 +10,7 @@
       </div>
       <!--Opzioni-->
       <div class="row mt-5">
-        <div class="col-3" v-for="item in siteOption" :key="item">
+        <div class="col-3" v-for="item in siteOption" :key="item.title">
           <img
             v-bind:src="require(`../assets/${item.img}`)"
             :alt="item.title"

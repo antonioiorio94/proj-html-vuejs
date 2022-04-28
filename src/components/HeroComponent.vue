@@ -71,8 +71,8 @@ export default {
   button {
     padding: 15px;
     border: none;
-    background-color: #ef6f31;
-    color: white;
+    background-color: $main-orange;
+    color: #fff;
     font-weight: bold;
     border-radius: 10px;
     width: 15rem;
